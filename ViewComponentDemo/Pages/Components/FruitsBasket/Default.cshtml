@@ -1,0 +1,19 @@
+﻿@using DataProvider;
+@model List<Fruit>
+@{
+    var available = new SelectList(Model.Where(x => x.Selected == false), "Id", "Name");
+    var selected = new SelectList(Model.Where(x => x.Selected), "Id", "Name");
+}
+
+@{ /* asp-controller="fruits" asp-action="post" */ }
+
+<form class="fruitForm">
+<div class="form-inline">
+  <select name="available" class="form-control data-available" multiple="multiple" asp-items="@available"></select>
+  <select name="selected" class="form-control data-selected" multiple="multiple" asp-items="@selected"></select>
+</div>
+<input type="button" class="data-add" value="Add" />
+<input type="button" class="data-remove" value="Remove" />
+<input type="button" class="data-submit btn btn-primary" value="Submit" />
+</form>
+<script src="~/js/fruitsBasket.js" defer="defer"></script>
