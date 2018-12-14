@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using DataProvider;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,7 +6,7 @@ namespace ViewComponentDemo.Pages.Components.FruitsBasket
 {
     public class FruitsBasketViewComponent : ViewComponent
     {
-        private IFruitRepository _repo;
+        private readonly IFruitRepository _repo;
 
         public FruitsBasketViewComponent(IFruitRepository repo)
         {

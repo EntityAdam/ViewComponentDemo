@@ -7,7 +7,7 @@ namespace ViewComponentDemo.Api
     [ApiController]
     public class FruitsController : ControllerBase
     {
-        private IFruitRepository _repo;
+        private readonly IFruitRepository _repo;
 
         public FruitsController(IFruitRepository repo)
         {
@@ -20,7 +20,7 @@ namespace ViewComponentDemo.Api
             return Ok(_repo.GetFruits());
         }
 
-        // GET api/fruits/getselected
+        // GET api/fruits/GetSelected
         [HttpGet]
         public IActionResult GetSelected()
         {
@@ -30,7 +30,6 @@ namespace ViewComponentDemo.Api
         // POST api/fruits/post
         public void Post([FromForm] int[] selected)
         {
-            var x = HttpContext;
             _repo.SelectFruits(selected);
         }
     }

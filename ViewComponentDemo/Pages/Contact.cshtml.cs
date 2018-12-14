@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace ViewComponentDemo.Pages
 {
     public class ContactModel : PageModel
     {
-        public string Message { get; set; }
+        public string Message { get; private set; }
 
         public void OnGet()
         {

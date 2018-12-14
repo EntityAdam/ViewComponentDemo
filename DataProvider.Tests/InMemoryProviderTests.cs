@@ -34,7 +34,6 @@ namespace DataProvider.Tests
         public void SelectFruits_FirstFruitSelected_ShouldBeSelected()
         {
             var repo = new FruitRepository();
-            var fruits = repo.GetFruits();
 
             var ids = new[] { 1 };
             repo.SelectFruits(ids);
@@ -47,7 +46,6 @@ namespace DataProvider.Tests
         public void SelectFruits_FirstFruitSelected_NoOtherFruitShouldBeSelected()
         {
             var repo = new FruitRepository();
-            var fruits = repo.GetFruits();
 
             var ids = new[] { 1 };
             repo.SelectFruits(ids);
