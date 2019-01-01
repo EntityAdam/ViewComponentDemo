@@ -5,6 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\Components\FruitsBasket\ApiAjax.cshtml" />
+    <Content Remove="Pages\Components\FruitsBasket\RazorPagesPrg.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Components\FruitsBasket\ApiAjax.cshtml" />
+    <None Include="Pages\Components\FruitsBasket\RazorPagesPrg.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />

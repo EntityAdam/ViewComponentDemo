@@ -40,7 +40,10 @@ namespace DataProvider.InMemoryProvider
                     new Fruit() {Id = 1, Name = "Apple", Selected = false},
                     new Fruit() {Id = 2, Name = "Banana", Selected = false},
                     new Fruit() {Id = 3, Name = "Cherry", Selected = false},
-                    new Fruit() {Id = 4, Name = "Durian", Selected = false}
+                    new Fruit() {Id = 4, Name = "Durian", Selected = false},
+                    new Fruit() {Id = 5, Name = "Elderberry", Selected = false},
+                    new Fruit() {Id = 6, Name = "Fig", Selected = false},
+                    new Fruit() {Id = 7, Name = "Grape", Selected = false},
                 };
             }
         }
