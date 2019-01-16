@@ -17,7 +17,6 @@ namespace DataProvider.InMemoryProvider
         public void SelectFruits(int[] ids)
         {
             Reset();
-
             foreach (var id in ids)
             {
                 var fruit = GetFruitById(id);

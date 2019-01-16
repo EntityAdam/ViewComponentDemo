@@ -20,16 +20,15 @@ namespace ViewComponentDemo.ViewComponents
             switch (vcDemoType)
             {
                 case VcDemoType.RazorPages:
-                    return View("RazorPages", fruits);
+                    return await Task.FromResult<IViewComponentResult>(View("RazorPages", fruits));
                 case VcDemoType.RazorPagesPrg:
-                    return View("RazorPagesPrg", fruits);
+                    return await Task.FromResult<IViewComponentResult>(View("RazorPagesPrg", fruits));
                 case VcDemoType.Api:
-                    return View("Api", fruits);
+                    return await Task.FromResult<IViewComponentResult>(View("Api", fruits));
                 case VcDemoType.ApiAjax:
-                    return View("ApiAjax", fruits);
-
+                    return await Task.FromResult<IViewComponentResult>(View("ApiAjax", fruits));
                 default:
-                    return View(fruits);
+                    return await Task.FromResult<IViewComponentResult>(View(fruits));
             }
         }
     }
