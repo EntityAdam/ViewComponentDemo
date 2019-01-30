@@ -1,4 +1,4 @@
-﻿namespace ViewComponentDemo.ViewComponents
+﻿namespace ViewComponentDemo
 {
     public enum VcDemoType
     {

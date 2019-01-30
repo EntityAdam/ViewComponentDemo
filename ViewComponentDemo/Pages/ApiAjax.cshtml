@@ -7,11 +7,17 @@
 
 <article>
     <h2>@ViewData["Title"]</h2>
-    <p>This demonstration is utilizing a ViewComponent invoked by a Razor Page, and the POST is submitted to an API endpoint</p>
+    <p>This demonstration is utilizing a ViewComponent invoked by a Razor Page, and the POST is submitted to an API endpoint via AJAX</p>
     <p>Benefits</p>
     <ul>
         <li>Easy implementation</li>
-        <li>Same amount of JavaScript (Enough code to move elements from one list to the other)</li>
+        <li>More JavaScript
+            <ul>
+                <li>Move items between lists (same as before)</li>
+                <li>Ensure JS only loads once per page</li>
+                <li>AJAX call</li>
+            </ul>
+        </li>
         <li>
             No longer coupled to the Page it's being invoked from
             <ul>
@@ -24,7 +30,8 @@
     </ul>
     <p>Limitations</p>
     <ul>
-        <li>Unacceptable User Experience</li>
+        <li>More JavaScript Code</li>
+        <li>AJAX seems to be obsolete</li>
     </ul>
     <hr />
     <section>
@@ -33,9 +40,9 @@
             <dd>User Experience</dd>
             <dt><span style="color: gold">★★★★★</span></dt>
             <dd>Reusable</dd>
-            <dt><span style="color: gold"></span>★★★★★</dt>
+            <dt><span style="color: gold">★★★★★</span></dt>
             <dd>Easy to implement</dd>
-            <dt><span style="color: gold">★★</span>★★★</dt>
+            <dt><span style="color: gold">★★★</span>★★</dt>
         </dl>
     </section>
 </article>

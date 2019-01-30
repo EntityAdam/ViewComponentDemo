@@ -31,10 +31,10 @@ namespace ViewComponentDemo.Tests
             var repo = new FruitRepository();
             var vc = new FruitsBasketViewComponent(repo);
 
-            repo.SelectFruits(new int[] { 1, 2, 7 });
-
+            repo.SelectFruits(new[] { 1, 2, 7 });
+            
             var result = await vc.InvokeAsync(VcDemoType.RazorPagesPrg) as ViewViewComponentResult;
-
+            
             var model = result.ViewData.Model as List<Fruit>;
 
             Assert.Equal(7, model.Count);

@@ -46,7 +46,13 @@ namespace ViewComponentDemo
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
-            app.UseMvc();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller}/{action}/{id?}",
+                    defaults: new { controller = "Main", action = "Index" });
+            });
         }
     }
 }
